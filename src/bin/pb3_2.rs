@@ -1,6 +1,8 @@
 fn main() {
-    let res = unpack_number_tuples3(&[(1, 4, 5), (2, 2, 1)]);
-    println!("{:?}", res);
+    let v = [(1, 4, 5), (2, 2, 1)];
+    let res = unpack_number_tuples3(&v);
+    println!("Input : {:?}", v);
+    println!("Result => {:?}", res);
 }
 
 fn unpack_number_tuples3(v1: &[(i32, i32, i32)]) -> (Vec<i32>, Vec<i32>, Vec<i32>) {

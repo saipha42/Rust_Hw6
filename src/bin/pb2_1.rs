@@ -1,11 +1,16 @@
 fn main() {
 
-    let res = pack_number_tuples3(&[1,2], &[1], &[1,2,3]);
-    println!("{:?}", res);
+    let v1 = [1,2];
+    let v2 = [1];
+    let v3 = [1,2,3];
+
+    let res = pack_number_tuples3(&v1, &v2, &v3);
+    println!("Input => v1 : {:?} and v2 : {:?} and v3 : {:?}", v1, v2,v3);
+    println!("result : {:?}", res);
 }
 
 
-fn pack_number_tuples3(mut v1: &[i32], mut v2: &[i32], mut v3: &[i32]) -> Vec<(i32, i32, i32)> {
+fn pack_number_tuples3(v1: &[i32], v2: &[i32], v3: &[i32]) -> Vec<(i32, i32, i32)> {
 
      let mut res:Vec<(i32, i32, i32)> = Vec::new();
 

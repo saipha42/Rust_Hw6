@@ -1,7 +1,8 @@
 fn main() {
-    let res = cal_partial_sums(&[2, 11, 3, 4, 7]);
+    let v = [2, 11, 3, 4, 7];
+    let res = cal_partial_sums(&v);
 
-    println!("{:?}", res);
+    println!("Input : {:?} => Result : {:?}", v,  res);
 }
 
 

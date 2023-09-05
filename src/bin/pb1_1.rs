@@ -2,7 +2,7 @@ fn main(){
 
     let v = [1,2,3,4,0];
     let res = min_max_avg(&v);
-    println!("{:?}", res);
+    println!("Input vector : {:?} => Result : {:?}", v, res);
 }
 
 
